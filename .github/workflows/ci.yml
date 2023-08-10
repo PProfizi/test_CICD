@@ -6,7 +6,7 @@ on:
       - master
 
 env:
-  DOCUMENTATION_CNAME: 'pprofizi.github.io/test_CICD/'
+  DOCUMENTATION_CNAME: 'pprofizi.github.io/test_CICD'
 
 jobs:
   docs:
