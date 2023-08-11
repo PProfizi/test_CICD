@@ -38,12 +38,10 @@ jobs:
           file: HTML-doc.zip
           token: ${{ secrets.GITHUB_TOKEN }}
 
-#      - name: "Unzip HTML Documentation"
-#        shell: bash
-#        run: |
-#          unzip HTML-doc.zip -d documentation-html
-#          chmod -R 777 documentation-html
-#        if: always()
+      - name: "List downloaded assets"
+        shell: bash
+        run: |
+          ls
 
       - name: "Deploy the stable documentation"
         uses: ansys/actions/doc-deploy-stable@v4
