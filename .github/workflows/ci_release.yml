@@ -52,7 +52,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: HTML-doc.zip
-          path: docs/build/html
+          path: HTML-doc.zip
         if: always()
 
   draft_release:
