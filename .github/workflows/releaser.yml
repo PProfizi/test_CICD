@@ -28,7 +28,7 @@ jobs:
 
   upload_docs_release:
     name: "Upload stable documentation"
-    needs: [Publish_to_PyPI]
+#    needs: [Publish_to_PyPI]
     if: startsWith(github.ref, 'refs/tags/v')
     runs-on: ubuntu-latest
     steps:
