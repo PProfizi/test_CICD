@@ -51,3 +51,4 @@ jobs:
           cname: ${{ env.DOCUMENTATION_CNAME }}
           token: ${{ secrets.GITHUB_TOKEN }}
           doc-artifact-name: HTML-doc.zip
+          decompress-artifact: true
