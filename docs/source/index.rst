@@ -4,4 +4,4 @@
 Title
 =====
 
-Hello '0.1.dev0'.
+Hello '0.1.0'.
