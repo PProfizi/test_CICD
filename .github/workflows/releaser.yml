@@ -43,6 +43,12 @@ jobs:
         run: |
           ls
 
+      - name: "Upload artifact"
+        uses: actions/upload-artifact@v3
+        with:
+          name: HTML-doc.zip
+          path: HTML-doc.zip
+
       - name: "Deploy the stable documentation"
         uses: ansys/actions/doc-deploy-stable@v4
         with:
