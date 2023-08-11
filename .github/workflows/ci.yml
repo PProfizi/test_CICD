@@ -15,6 +15,29 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Setup Python
+        uses: actions/setup-python@v4.6.0
+        with:
+          python-version: 3.10
+
+      - name: "Setup headless display"
+        uses: pyvista/setup-headless-display-action@v1
+
+      - name: "Setup Graphviz"
+        uses: ts-graphviz/setup-graphviz@v1
+
+      - name: "Install OS packages"
+        run: |
+          choco install pandoc
+
+      - name: "Install documentation packages for Python"
+        run: |
+          pip install -r requirements/requirements_docs.txt
+
+      - name: "List installed packages"
+        shell: bash
+        run: pip list
+
       - name: "Build HTML Documentation"
         shell: cmd
         working-directory: .ci
