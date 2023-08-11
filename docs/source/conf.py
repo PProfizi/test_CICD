@@ -9,10 +9,10 @@ author = "PProfizi"
 cname = os.getenv("DOCUMENTATION_CNAME", 'pprofizi.github.io/test_CICD')
 
 # The short X.Y version
-version = 0.1
+version = "0.1.dev0"
 
 # The full version, including alpha/beta/rc tags
-release = 0.1.dev0
+release = "0.1.dev0"
 
 # -- General configuration ---------------------------------------------------
 
